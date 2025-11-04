@@ -1,0 +1,124 @@
+html,
+body {
+   height: 100%;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   font-family: Arial, sans-serif;
+   background-color: #f8f8f8;
+   color: #333;
+}
+
+/* Шапка */
+header {
+   background: #2d80d2;
+   color: white;
+   padding: 15px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header h1 {
+   margin: 0;
+   font-size: 24px;
+}
+
+header span {
+   font-size: 14px;
+   display: block;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   margin: 0 10px;
+   font-weight: 500;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+/* Контент */
+main {
+   flex: 1;
+}
+
+/* Продукти */
+.products {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 40px 20px;
+   flex-wrap: wrap;
+}
+
+.card {
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+   max-width: 100%;
+   height: 200px;
+   /* однакова висота */
+   object-fit: contain;
+   /* щоб картинка не спотворювалась */
+   margin-bottom: 15px;
+}
+
+.card h3 {
+   margin: 10px 0 5px;
+   text-align: center;
+}
+
+.card p {
+   color: #555;
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.btn {
+   background: #2d80d2;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   margin-top: auto;
+   /* кнопка завжди внизу картки */
+}
+
+.btn:hover {
+   background: #1a5ca2;
+}
+
+/* Футер */
+footer {
+   background: #f1f1f1;
+   padding: 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: auto;
+   /* футер завжди внизу */
+}
+
+footer a {
+   margin: 0 10px;
+   text-decoration: none;
+   color: #2d80d2;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
